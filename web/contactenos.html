@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<html>
+<head>
+    <title>Paulicon Perú Contratistas Generales SAC</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Estructuras metálicas industriales">
+    <meta name="keywords" content="Estructuras metálicas industriales">
+    <meta name="author" content="Gutierrez Molina Pool Erick">
+
+    <link rel="shortcut icon" href="Imágenes/iconoemp.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <script type="text/javascript" src="js/validacion.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/animaciones/aos.css">
+
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <div id="marca">
+                <h1><span class="resaltado">PAULICON</span> Perú contratistas generales S.A.C.</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="estructuras.html">Estructuras</a>
+                    </li>
+                    <li>
+                        <a href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="actual">
+                        <a href="contactenos.html">Contáctenos</a>
+                    </li>
+                    <li>
+                        <a href="login.html">Iniciar sesión</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="cotizacion">
+        <div class="contenedor">
+            <h1>Recibe el formulario para tu cotización</h1>
+            <form name="validacorreo">
+                <input type="email" name="email" placeholder="Ingrese su email" required autofocus>
+                <button type="submit" class="boton1" onclick="Validar()">Solicitar formulario</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="contenido">
+        <div class="contenedor" data-aos="zoom-in">
+            <article id="articulo1">
+                <h1>Contáctenos</h1>
+                <form name="validarcontacto">
+                    <label>Nombres</label>
+                    <input type="text" name="nom" placeholder="Ingrese su nombre" onkeypress="return validarletras(event)" required><br><br>
+                    <label>Apellidos</label>
+                    <input type="text" name="ape" placeholder="Ingrese sus apellidos" onkeypress="return validarletras(event)" required><br><br>
+                    <label>DNI</label>
+                    <input type="text" name="dni" placeholder="Ingrese su DNI" onkeypress="return validarnumeros(event)" maxlength="8" required><br><br>
+                    <label>Celular</label>
+                    <input type="text" name="cel" placeholder="Ingrese su número celular" onkeypress="return validarnumeros(event)" maxlength="9" required><br><br>
+                    <label>Email</label>
+                    <input type="text" name="correo" placeholder="Ingrese su correo electrónico" required><br><br>
+                    <label>Consulta</label>
+                    <textarea name="area" placeholder="Escriba su consulta" required></textarea><br><br>
+                    <input type="button" value="Enviar" name="Enviar" onclick="Validarform()">
+                </form>
+            </article>           
+        </div>
+    </section>
+
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>NÚMERO DE CONTACTO</h4>
+                <p><b>991016031</b></p>
+            </div>
+            <div class="content-foo">
+                <h4>CORREO</h4>
+                <p><b>Paulicon.contratista@gmail.com</b></p>
+            </div>
+            <div class="content-foo">
+                <h4>UBICACIÓN</h4>
+                <p><b>Av. Carretera Central km 14.800 Gloria Grande Ate</b></p>
+            </div>
+        </div><br>
+        <p><b>PAULICON SAC</b> Copyrigth &copy; Gutierrez Molina Pool Erick 2020</p>
+    </footer>
+    <script type="text/javascript" src="js/animaciones/aos.js"></script>
+    <script type="text/javascript">
+        AOS.init({
+            offset:200,
+            duration:1000,
+        });
+    </script>
+
+</body>
+</html>
